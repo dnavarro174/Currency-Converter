@@ -1,0 +1,2 @@
+A simple currency converter. Retrieves exchange rates directly from Yahoo.com using YQL.
+View the webpage at http://secure-brushlands-4397.herokuapp.com deployed using Heroku.
