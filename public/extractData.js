@@ -7,11 +7,13 @@ function getRate(top, bot) {
 function parseJSON(data) {
     var rate   = parseFloat(data.query.results.rate.Rate);
     var value = document.getElementById('amount').value;
-    if (!isNaN(parseFloat(value)) && isFinite(value)) {
-        var amount = parseFloat(value);
-        var ans    = amount * rate;
-        document.getElementById('output').value = ans;
-    } else document.getElementById('output').value = "Error";
+    if (value !== "") {
+        if (!isNaN(parseFloat(value)) && isFinite(value)) {
+            var amount = parseFloat(value);
+            var ans    = amount * rate;
+            document.getElementById('output').value = ans;
+        } else document.getElementById('output').value = "Error";
+    }
 }
             
 function extractData() {
